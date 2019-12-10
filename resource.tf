@@ -34,7 +34,7 @@ resource "ibm_compute_vm_instance" "khayama-win16jp" {
     flavor_key_name = "${var.flavor_key_name}"
     public_security_group_ids = [1287613]
     user_metadata = "${var.password}"
-    post_install_script_uri = "https://gist.githubusercontent.com/khayama/d5f32d1c5718692cd1af828907ab46d2/raw/759c5596e7332fdb1d4c95b5d230a2eb7f337327/Win2016_Japanese.bat"
+    post_install_script_uri = "https://gist.githubusercontent.com/khayama/d5f32d1c5718692cd1af828907ab46d2/raw/633357eeca25569bb26bddcf074d74d9d88af54c/Win2016_Japanese.bat"
     tags = ["user:khayama"]
     notes = "khayama's Resource created by Schematics"
 }
