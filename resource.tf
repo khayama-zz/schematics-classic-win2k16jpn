@@ -16,8 +16,8 @@ variable "flavor_key_name" {
   default = "B1_2X4X100"
 }
 
-resource "ibm_compute_vm_instance" "khayama-test" {
-    hostname = "khayama-test"
+resource "ibm_compute_vm_instance" "khayama-win2k16jpn" {
+    hostname = "khayama-win2k16jpn"
     domain = "ibmcloud.com"
     os_reference_code = "${var.os_reference_code}"
     datacenter = "${var.datacenter}"
