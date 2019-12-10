@@ -21,7 +21,7 @@ variable "password" {
   description = "Please set your password to Metadata of the server"
 }
 
-resource "ibm_compute_vm_instance" "khayama-win2k16jpn" {
+resource "ibm_compute_vm_instance" "khayama_win2k16jpn" {
     hostname = "khayama-win2k16jpn"
     domain = "ibmcloud.com"
     os_reference_code = "${var.os_reference_code}"
